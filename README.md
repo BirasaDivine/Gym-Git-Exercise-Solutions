@@ -1159,3 +1159,107 @@ To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
    95820a3..16b34b2  ft/faq-page -> ft/faq-page
 ```
 # EXERCISE 2
+```bash
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "Adding bundle 3 on README"
+[main 61ab206] Adding bundle 3 on README
+ 1 file changed, 824 insertions(+), 2 deletions(-)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.42 KiB | 3.21 MiB/s, done. 
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
+   ce0ae36..61ab206  main -> main
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ it branch ft/faq-page 
+bash: it: command not found
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/faq-page
+fatal: a branch named 'ft/faq-page' already exists
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.      
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "Changes on my main"
+[main e241ee6] Changes on my main
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 421 bytes | 140.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
+   61ab206..e241ee6  main -> main
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "Adding changes on my home page"
+[ft/home-page-redesign be2508c] Adding changes on my home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign  
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$  git push --set-upstream origin ft/home-page-redesign
+al object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'
+```
