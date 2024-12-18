@@ -1263,3 +1263,175 @@ To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'
 ```
+# BUNDLE 4
+# EXERCISE 1
+```bash
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/BirasaDivine/git-exercises-clone.git
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git remote
+git-copy
+origin
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "Changes on my home page"
+[main d1d72e7] Changes on my home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
+   6bffe37..d1d72e7  main -> main
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+To https://github.com/BirasaDivine/git-exercises-clone.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/BirasaDivine/git-exercises-clone.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git pull
+Already up to date.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+To https://github.com/BirasaDivine/git-exercises-clone.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/BirasaDivine/git-exercises-clone.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main
+From https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+To https://github.com/BirasaDivine/git-exercises-clone.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/BirasaDivine/git-exercises-clone.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+# EXERCISE 2
+```bash 
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/footer
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "Changes on Branch ft/footer"
+[ft/footer 75988b5] Changes on Branch ft/footer
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "Second Changes on Branch ft/footer"      
+[ft/footer 3c6a581] Second Changes on Branch ft/footer
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Writing objects: 100% (6/6), 624 bytes | 208.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+ 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+ons.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/squashing
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating d1d72e7..3c6a581
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 2 ++
+ 1 file changed, 2 insertions(+)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git add .
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m "ft/squashing"
+[ft/squashing ff0f096] ft/squashing
+ 1 file changed, 2 insertions(+)
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+LENOVO@DESKTOP-G7D6FUR MINGW64 ~/ALU/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 176.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote: 
+To https://github.com/BirasaDivine/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+```
